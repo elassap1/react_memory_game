@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,kBAAmB,CACnB,aACF,CAEA,MACE,8BACF,CACA,YACE,oBAAyB,CACzB,cACF","file":"main.acf1af6c.chunk.css","sourcesContent":["body{\n  background: #5c8553;\n  color: antiquewhite;\n}\n\n.card{\n  transition: all .3s ease-in-out;\n}\n.card:hover{\n  transform: scale(1.1,1.1);\n  cursor: pointer;\n}\n"]}
