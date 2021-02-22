@@ -1,0 +1,12 @@
+body{
+  background: #5c8553;
+  color: antiquewhite;
+}
+
+.card{
+  transition: all .3s ease-in-out;
+}
+.card:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}

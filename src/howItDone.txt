@@ -1,0 +1,40 @@
+step 1
+  create the simple nav has score and high score
+  styling the nav in the seem component
+
+step 2
+  stor the api in object named ApiCard.js
+
+step 3
+  import the Card
+  get the random picture
+  use map method to display the picture
+  styling the card image in component
+
+step 4
+  set condition of game
+    4-1: check win by id and set the result
+    4-2: if win increment the score
+      4-2-1: i have some defficult howe to change the state of statu card
+      4-2-2: fixing the probleme by create new array then set assigning it on the state (listCard)
+
+    4-3: if lose set initial score and the high score and hihg level
+    4-4: fixing the styling problems
+
+step 5 
+  card change place when click
+  5-1: i used the foreach method but faild
+  5-2: i used the map method but faild again
+  5-3: i used simple for loop 
+      5-3-1: assing the random root array to variable
+      5-3-2: then put the variable on new array
+      5-3-3: then remove the random from the root array
+
+step 6
+  add some animation when click cards
+
+step 7 
+  trying to turn code to design patterns
+
+
+
