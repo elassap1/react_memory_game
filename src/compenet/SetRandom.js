@@ -6,7 +6,7 @@ const SetRandom = (level) => {
   let newCard = [];//new empty array to sort the random card
   let length = 2+level*2;//how much the card display
 
-  if(length>16)length=16;//control the max cards can display
+  if(length>15)length=15;//control the max cards can display
 
 
   for (let index = 0; index < length; index++) {//loop to make card for playing

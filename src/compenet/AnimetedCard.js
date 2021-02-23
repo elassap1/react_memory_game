@@ -1,4 +1,4 @@
-export default (id) => {
+const AnimetedCard = (id) => {
   
   let element = document.querySelector(`[data-key='${id}']`);
   if(element)element.style.transform='rotateY(180deg)'
@@ -8,3 +8,5 @@ export default (id) => {
   },300)
 
 }
+
+export default AnimetedCard;

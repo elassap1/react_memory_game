@@ -6,6 +6,7 @@ import CardElements from './compenet/CardElements';
 import SetRandom from './compenet/SetRandom';
 import AnimetedCard from './compenet/AnimetedCard';
 import RefreshCard from './compenet/RefreshCard';
+import image from './back.jpg'
 
 
 class App extends Component {
@@ -34,7 +35,7 @@ class App extends Component {
   }
 
   // detecte the result of game
-  theGameResult = (id) => {
+  theGameResult = async(id) => {
     
     let {score, gameState, level, highScore, highLevel, listCard, scoreLevel} = this.state;//distructuring
     let lent = listCard.length;// length
@@ -78,7 +79,12 @@ class App extends Component {
     })
 
     //save the the change in state (listCard)
-    this.setState({listCard: RefreshCard(listCard)})
+    let game = RefreshCard(listCard);
+    if(game.length !== 0){
+      this.setState({listCard: game})
+    }
+    
+    console.log(game)
 
   },1000)
   
@@ -93,7 +99,9 @@ class App extends Component {
     })
 
     return (
-      <div className="App">
+      
+      <div className="App" style={{background: `url(${image})`,backgroundSize:'cover',height:'100vh',maxHeight:'120vh'}} >
+         
         <ControlPlayGame theMemory={theMemory} random={this.setRandomCard} gameState={this.state.gameState} result={this.state} />
       </div>
     );

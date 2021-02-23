@@ -1,5 +1,8 @@
+#root{
+  height: 100vh !important;
+}
+
 body{
-  background: #5c8553;
   color: antiquewhite;
 }
 
@@ -7,6 +10,6 @@ body{
   transition: all .3s ease-in-out;
 }
 .card:hover{
-  transform: scale(1.1,1.1);
+  transform: scale(1.2,1.2);
   cursor: pointer;
 }

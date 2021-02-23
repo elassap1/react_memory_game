@@ -1,4 +1,4 @@
-export default (arr) => {
+const RefreshCard = (arr) => {
 
   let refresh = [];// new array
 
@@ -19,3 +19,4 @@ export default (arr) => {
   return refresh;
 
 }
+export default RefreshCard;
